@@ -13,4 +13,4 @@ deploy:
   local_dir: build
   on:
     branch: master
-after_success: npm test
+after_success: jest --coverage --coverageReporters=text-lcov | coveralls

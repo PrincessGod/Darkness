@@ -14,7 +14,7 @@
     "start": "serve",
     "dev": "run-p start watch",
     "lint": "eslint src",
-    "test": "jest | coveralls"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
