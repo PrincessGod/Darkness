@@ -14,7 +14,7 @@
     "start": "serve",
     "dev": "run-p start watch",
     "lint": "eslint src",
-    "test": "jest"
+    "test": "jest | coveralls"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,9 @@
   },
   "homepage": "https://github.com/PrincessGod/Darkness#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "coveralls": "^3.0.2",
     "cross-env": "^5.2.0",
     "eslint": "^5.9.0",
     "eslint-config-mdcs": "^4.2.3",
@@ -38,9 +41,7 @@
     "npm-run-all": "^4.1.5",
     "rollup": "^0.67.3",
     "serve": "^10.1.1",
-    "uglify-js-es6": "^2.8.9",
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0"
+    "uglify-js-es6": "^2.8.9"
   },
   "eslintConfig": {
     "env": {
@@ -84,7 +85,7 @@
   "jest": {
     "collectCoverage": true,
     "collectCoverageFrom": [
-		  "src/**/*.js"
+      "src/**/*.js"
     ],
     "coverageDirectory": "coverage",
     "coverageReporters": [
