@@ -5,7 +5,7 @@ cache:
   directories:
   - node_modules
 script:
-  - npm run build-all && npm test
+  - npm run build-all
 deploy:
   provider: pages
   skip_cleanup: true
@@ -13,3 +13,4 @@ deploy:
   local_dir: build
   on:
     branch: master
+after_success: npm test && sbt coveralls
