@@ -1,0 +1,1 @@
+{"version":3,"file":"darkness.umd.js","sources":["../src/Darkness.js"],"sourcesContent":["function add( a, b ) {\n\n    return a + b;\n\n}\n\nexport { add };\n"],"names":[],"mappings":";;;;;;IAAA,SAAS,GAAG,EAAE,CAAC,EAAE,CAAC,GAAG;;IAErB,IAAI,OAAO,CAAC,GAAG,CAAC,CAAC;;IAEjB,CAAC;;;;;;;;;;;;"}
